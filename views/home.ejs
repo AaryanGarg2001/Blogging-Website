@@ -8,7 +8,7 @@
         <% if(posts[i].body.length<=100) { %>
         <p><%= posts[i].body %></p>
         <%} else { %>
-            <p><%= posts[i].body.substring(0,101) %>...<a href="/post/<%= posts[i].title %>"> Read More</a></p>
+            <p><%= posts[i].body.substring(0,101) %>...<a href="/post/<%= posts[i]._id %>"> Read More</a></p>
         <%}%>
     <%}%>
 
